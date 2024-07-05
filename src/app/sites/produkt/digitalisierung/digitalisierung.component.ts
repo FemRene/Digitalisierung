@@ -16,5 +16,4 @@ export class DigitalisierungComponent implements OnInit {
     this.prices = this._service.getData()
     console.log(this.prices['produkte']['hi8']);
   }
-
 }
