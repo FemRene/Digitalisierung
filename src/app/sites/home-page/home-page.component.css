@@ -1,0 +1,34 @@
+.container {
+  padding-top: 5vh !important;
+}
+
+.b-link {
+  color: red !important;
+}
+
+.card {
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+/* PC */
+@media (min-width: 992px) {
+  .card-group {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 75vw !important;
+    min-width: auto !important;
+  }
+}
+/* MOBILE */
+@media screen and (max-width:991px) {
+  app-product-card {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+  .infos {
+    margin-left: 0 !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 5vh !important;
+  }
+}

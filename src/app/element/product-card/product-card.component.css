@@ -1,0 +1,26 @@
+* {
+  border: none !important;
+}
+
+.card {
+  margin-left: 1.5vw !important;
+  margin-right: 1.5vw !important;
+}
+
+.card-img-top{
+  width:100%;
+  height:auto;
+}
+/* MOBILE */
+@media screen and (max-width:991px) {
+  * {
+    min-width: 50vw !important;
+    max-width: 50vw !important;
+    margin-left: 21vw !important;
+  }
+  .card-body {
+    * {
+      margin-left: -2vw !important;
+    }
+  }
+}

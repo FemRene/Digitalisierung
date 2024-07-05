@@ -1,0 +1,6 @@
+@media (max-width: 991px) {
+  img {
+    min-width: 75vw !important;
+    max-width: 75vw !important;
+  }
+}

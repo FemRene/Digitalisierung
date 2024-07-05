@@ -1,0 +1,5 @@
+<div class="container" *ngFor="let name of pictures">
+  <a data-fancybox [attr.data-src]="'/galerie/big/' + name">
+    <img src="/galerie/small/{{ name }}">
+  </a>
+</div>

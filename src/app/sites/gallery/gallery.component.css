@@ -1,0 +1,11 @@
+img {
+  margin-left: 0.25vw;
+  margin-right: 0.25vw;
+  border-radius: 25px;
+  max-width: 90vw;
+  margin-top: 3vh;
+  float: left;
+}
+a {
+  z-index: -10;
+}

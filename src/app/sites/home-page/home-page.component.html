@@ -1,0 +1,37 @@
+<div class="container text-center">
+  <h1 class="fw-bold">Ihre Video- & Fotoschätze in digitaler Top Qualität</h1>
+  <h5 class="fw-bold">Alle Arbeiten werden bei uns direkt vor Ort durchgeführt!</h5>
+</div>
+<br>
+<div class="card-group container text-center row">
+  <app-product-card class="col-md-6 col-lg-4 col-xl-3 py-2" [image]="'/pics/hi8.jpg'" [title]="'Digitalisierung von VHS'" [description]="'Digitalisierung von VHS/VHS-C/Video8/Hi8 & Mini DV Kassetten'" [link]="'/produkt/digitalisierung'"></app-product-card>
+  <app-product-card class="col-md-6 col-lg-4 col-xl-3 py-2" [image]="'/pics/pics01.jpg'" [title]="'Dia gerahmt und unverglast'" [description]="'ab 0,18€/Stück'" [link]="'/produkt/dias'"></app-product-card>
+  <app-product-card class="col-md-6 col-lg-4 col-xl-3 py-2" [image]="'/pics/pics11.jpg'" [title]="'Filmrollen und Filmstreifen'" [description]="'Negative Schwarzweiß oder Farbig'" [link]="'/produkt/film'"></app-product-card>
+  <app-product-card class="col-md-6 col-lg-4 col-xl-3 py-2" [image]="'/pics/pics12.jpg'" [title]="'Glasrahmen und Mittelformat'" [description]="'Einzeldias oder Negative, Sonderformate'" [link]="'/produkt/einzel_dias'"></app-product-card>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-8 infos" style="margin-left: -4vw;">
+      <h1 class="fw-bold text-center">Sichern Sie Ihre Fotoschätze!</h1>
+      <h6 class="fw-bold text-break">Holen Sie Ihre Foto-Erinnerungen aus dem Keller, Dachboden oder Schrank und machen sie Digital verfügbar. Egal ob für PC, Fernseher, Laptop, Tablet, Smartphone oder für Ihre Homepage. Wir bieten Ihnen den einfachen Weg zur top Qualität.</h6>
+      <img src="/pics/pics02.jpg" style="max-width: 50vw; max-height: 50vh; margin-top: 2vh; margin-bottom: 2vh">
+      <p class="text-break">Wir bieten top Qualität und individuelle Nachbearbeitung jedes einzelnen Bildes ohne extra Kosten! So können fehlerhafte Korrekturen durch automatische Überarbeitung vermieden werden um noch bessere Ergebnisse zu erzielen. Gerne können wir auch auf individuelle Wünsche eingehen. Zu allen Fragen rund um die Digitalisierung <a [routerLink]="'/info/kontakt'" class="b-link">beraten</a> wir Sie gern! </p>
+      <br>
+      <a class="btn btn-dark" href="/info/wissenswertes">WEITER LESEN</a>
+    </div>
+    <div class="col-4 infos">
+      <h1 class="fw-bold">Wir beraten Sie gern!</h1>
+      <p class="text-uppercase">Persönlich vor Ort oder per Telefon</p>
+      <br>
+      <p>Besuchen Sie uns in der Bornaischen Straße 72 , 04277 Leipzig. Wir sind von Montag bis Freitag, jeweils von 10 bis 18 Uhr für Sie da. Oder rufen Sie uns an!</p>
+      <p class="fw-bold">Tel.: 0341/58067604</p>
+      <a [routerLink]="'/info/versand'" class="b-link">Liefer- und Versandkosten</a>
+      <br><br>
+      <a [routerLink]="'/info/zahlung'" class="b-link">Zahlungsmöglichkeiten</a>
+      <br><br>
+      <a [routerLink]="'/info/datenschutz'" class="b-link">Datenschutz und Privatsphäre</a>
+      <br><br>
+      <a [routerLink]="'/info/impressum'" class="b-link">Impressum</a>
+    </div>
+  </div>
+</div>

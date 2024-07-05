@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 infos" style="margin-left: -4vw;">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-4 infos">
+      <h1 class="fw-bold">Wir beraten Sie gern!</h1>
+      <p class="text-uppercase">Persönlich vor Ort oder per Telefon</p>
+      <br>
+      <p>Besuchen Sie uns in der Bornaischen Straße 72 , 04277 Leipzig. Wir sind von Montag bis Freitag, jeweils von 10 bis 18 Uhr für Sie da. Oder rufen Sie uns an!</p>
+      <p class="fw-bold">Tel.: 0341/58067604</p>
+      <a [routerLink]="'/info/versand'" class="b-link">Liefer- und Versandkosten</a>
+      <br><br>
+      <a [routerLink]="'/info/zahlung'" class="b-link">Zahlungsmöglichkeiten</a>
+      <br><br>
+      <a [routerLink]="'/info/datenschutz'" class="b-link">Datenschutz und Privatsphäre</a>
+      <br><br>
+      <a [routerLink]="'/info/impressum'" class="b-link">Impressum</a>
+    </div>
+  </div>
+</div>
