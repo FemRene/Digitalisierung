@@ -23,6 +23,7 @@ import { VersandComponent } from './sites/info/versand/versand.component';
 import { ZahlungComponent } from './sites/info/zahlung/zahlung.component';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {HttpClientModule} from "@angular/common/http";
+import {DataPriceService} from "./service/data-price.service";
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -73,7 +74,7 @@ const appRoutes: Routes = [
     NgbModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [DataPriceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

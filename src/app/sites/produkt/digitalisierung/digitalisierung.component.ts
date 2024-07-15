@@ -7,13 +7,21 @@ import {DataPriceService} from "../../../service/data-price.service";
   styleUrl: './digitalisierung.component.css'
 })
 export class DigitalisierungComponent implements OnInit {
+  data: any = null;
+  isLoading = true;
 
-  prices: any;
-
-  constructor(private _service: DataPriceService) {}
+  constructor(private dataService: DataPriceService) {}
 
   ngOnInit() {
-    this.prices = this._service.getData()
-    console.log(this.prices['produkte']['hi8']);
+    this.dataService.getData().subscribe(
+      (data) => {
+        this.data = data['produkte']['hi8'];
+        this.isLoading = false;
+      },
+      (error) => {
+        console.error('Error loading data', error);
+        this.isLoading = false;
+      }
+    );
   }
 }

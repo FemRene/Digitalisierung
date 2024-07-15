@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
+import {delay, Observable, of, tap} from "rxjs";
+import {Router} from "@angular/router";
+import {HttpClient} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataPriceService {
-  private data: any;
 
-  setData(data: any) {
-    this.data = data;
-  }
+  constructor(private http: HttpClient) {}
 
-  getData() {
-    return this.data;
+  getData(): Observable<any> {
+    return this.http.get("preise.json");
   }
 }

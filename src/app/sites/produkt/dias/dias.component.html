@@ -1,5 +1,7 @@
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="!isLoading && data">
 <h1 class="fw-bold">Top Qualität zum fairen Preis!<br>Dias gerahmt mit und ohne Verglasung</h1>
-<h5 class="fw-bold"> 0,30€, ab 1000 Stück 0,20€, ab 2500 Stück 0,18€.<br>Einzelbilder, Mittelformat und Sondergrößen 0,45€ pro Stück.<br>Kleinstmenge (bis 30 Stück) pauschal: 14.-€</h5>
+<h5 class="fw-bold"> {{ data['normal'] }}, ab 1000 Stück {{data['ab-1000']}}, ab 2500 Stück {{data['ab-2500']}}.<br>Einzelbilder, Mittelformat und Sondergrößen {{data['sonderformat']}}.<br>Kleinstmenge (bis 30 Stück) pauschal: {{data['kleinmengen']}}</h5>
 <img src="/pics/pic-11-2.jpg" style="max-width: 30vw; max-height: 30vh;">
 <br><br>
 <p>
@@ -16,3 +18,4 @@
   <span class="fw-bold">Fertig.</span>
 </p>
 <img src="/pics/pic-11-3.jpg" style="max-width: 30vw; max-height: 30vh;">
+</div>

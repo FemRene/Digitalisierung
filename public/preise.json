@@ -5,9 +5,9 @@
       "Video8/Hi8/Mini-DV": {
         "3-stk": "14€/Stück",
         "bis-20-stk": "13€/Stück",
-        "über-20-stk": "10€/Stück"
+        "ueber-20-stk": "10€/Stück"
       },
-      "Super8/8mm": "1,50€/Minute",
+      "Super8/8mm": "1,50€ je digitalisierter Filmminute",
       "speicher": {
         "USB-16": "7€/Stick",
         "DVD-Rohling": "5€/Stück"
@@ -20,12 +20,12 @@
       "sonderformat": "0,45€/Stück",
       "kleinmengen": "14€"
     },
-    "negative": {
+    "film": {
       "normal": "0,39€/Foto",
       "ab-500": "0,35€/Foto",
       "kleinmengen": "10€"
     },
-    "sonderformate": {
+    "einzel-dias": {
       "normal": "0,45€",
       "ab-500": "0,40€"
     },
