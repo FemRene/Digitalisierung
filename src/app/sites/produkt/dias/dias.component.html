@@ -1,8 +1,18 @@
 <div *ngIf="isLoading">Loading...</div>
 <div *ngIf="!isLoading && data">
-<h1 class="fw-bold">Top Qualität zum fairen Preis!<br>Dias gerahmt mit und ohne Verglasung</h1>
-<h5 class="fw-bold"> {{ data['normal'] }}, ab 1000 Stück {{data['ab-1000']}}, ab 2500 Stück {{data['ab-2500']}}.<br>Einzelbilder, Mittelformat und Sondergrößen {{data['sonderformat']}}.<br>Kleinstmenge (bis 30 Stück) pauschal: {{data['kleinmengen']}}</h5>
-<img src="/pics/pic-11-2.jpg" style="max-width: 30vw; max-height: 30vh;">
+<h1 class="fw-bold">Top Qualität zum fairen Preis!</h1>
+<h4>Preise inkl. Vorbereitung, Digitalisierung und Nachbearbeitung</h4>
+  <span class="fw-semibold">
+    <li>Kleinstmenge bis 30 Stück Pauschal {{data['pauschal']}}</li>
+  <li>Bis 500 Stück {{data['bis-500']}}</li>
+  <li>Bis 1000 Stück {{data['bis-1000']}}</li>
+  <li>Bis 2000 Stück {{data['bis-2000']}}</li>
+  <li>Ab 2001 Stück {{data['ab-2001']}}</li>
+  </span>
+  <span class="fw-semibold">Bei Anlieferung im Universalmagazin</span> <br>
+  <span class="fw-semibold">Aufpreis für Umsortieren aus anderen Magazintypen, Archievboxen oder lose Dias {{data['aufpreis']}}</span>
+  <br><br>
+  <img src="/pics/pic-11-2.jpg" style="max-width: 30vw; max-height: 30vh;">
 <br><br>
 <p>
   <span class="fw-bold">Auflösung:</span><br>
