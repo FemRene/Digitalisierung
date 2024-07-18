@@ -1,16 +1,19 @@
 <div *ngIf="isLoading">Loading...</div>
 <div *ngIf="!isLoading && data">
 <h1 class="fw-bold">VHS, VHS-C, Video 8, Hi 8 & Mini DV<br>Super 8 & 8 mm Filmrollen</h1>
-<p style="margin-top: 3vh;"><span class="fw-bold">VHS & VHS-C:</span> {{ data['vhs'] }}<br>
-<span class="fw-bold">Video 8, Hi 8 & Mini DV:</span> bis 3 Stück: {{data['Video8/Hi8/Mini-DV']['3-stk']}}, bis 20 Stück: {{data['Video8/Hi8/Mini-DV']['bis-20-stk']}}<br>
-über 20 Stück: {{data['Video8/Hi8/Mini-DV']['ueber-20-stk']}}
-</p>
+  <hr>
+  <span class="fw-bold">VHS, VHS-C, S-VHS-C</span>
+  <li>Bis 3 Stück: {{data['vhs']['bis-3']}}</li>
+  <li>Ab 3 Stück: {{data['vhs']['ab-3']}}</li>
+  <br>
+  <span class="fw-bold">Video8, Hi8, MiniDV</span>
+  <li>Bis 3 Stück: {{data['Video8/Hi8/Mini-DV']['bis-3']}}</li>
+  <li>Bis 20 Stück: {{data['Video8/Hi8/Mini-DV']['bis-20']}}</li>
+  <li>Ab 20 Stück: {{data['Video8/Hi8/Mini-DV']['ab-20']}}</li>
+  <li>Nachbearbeitung, Schnitt: {{data['Video8/Hi8/Mini-DV']['bearbeitung']}}</li>
+  <li>Reperatur von Bandrissen: {{data['Video8/Hi8/Mini-DV']['reperatur']}}</li>
 <hr>
-<p><span class="fw-bold">Super 8 & 8mm:</span> {{data['Super8/8mm']}}<br>
-Müssen Filme geklebt werden oder ist die Transportperforation beschädigt, fallen Zusatzkosten an.
-</p>
-<hr>
-<p>Speicherung im MP4 Format* auf USB-Stick (ab {{data['speicher']['USB-16']}}[16GB]) oder auf DVD-Rohling ({{data['speicher']['DVD-Rohling']}})</p>
+<p>Speicherung im MPEG Format* auf USB-Stick (ab {{data['speicher']['USB-16']}}[16GB]) oder auf DVD-Rohling ({{data['speicher']['DVD-Rohling']}})</p>
 <p><small>* Andere Formate auf Wunsch möglich! Sprechen Sie uns an! </small></p>
 <img src="/pics/vhs_vorl200.png" style="max-width: 30vw; max-height: 30vh;">
 </div>

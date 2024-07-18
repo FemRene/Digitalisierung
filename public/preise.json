@@ -1,11 +1,16 @@
 {
   "produkte": {
     "hi8": {
-      "vhs": "10€",
+      "vhs": {
+        "bis-3": "12€",
+        "ab-3": "10€"
+      },
       "Video8/Hi8/Mini-DV": {
-        "3-stk": "14€/Stück",
-        "bis-20-stk": "13€/Stück",
-        "ueber-20-stk": "10€/Stück"
+        "bis-3": "14€/Stück",
+        "bis-20": "13€/Stück",
+        "ab-20": "10€/Stück",
+        "bearbeitung": "15€/Stück",
+        "reperatur": "10€/Stück"
       },
       "Super8/8mm": "1,50€ je digitalisierter Filmminute",
       "speicher": {
