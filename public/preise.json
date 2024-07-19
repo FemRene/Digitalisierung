@@ -32,8 +32,14 @@
       "kleinmengen": "10€"
     },
     "einzel-dias": {
-      "normal": "0,45€",
-      "ab-500": "0,40€"
+      "mittelformat": {
+        "bis-150": "0,90€",
+        "ab-150": "0,80"
+      },
+      "APS": {
+        "bis-150": "0,35€",
+        "ab-150": "0,30"
+      }
     },
     "papierbilder": {
       "bis-100": "0,50€",

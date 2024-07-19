@@ -1,7 +1,14 @@
 <div *ngIf="isLoading">Loading...</div>
 <div *ngIf="!isLoading && data">
 <h1 class="fw-bold">Sonderformate</h1>
-<p style="margin-top: 3vh;">{{data['normal']}}, ab 500 Stück {{data['ab-500']}}</p>
+  <h5 class="fw-semibold">Mittelformat 4x4 bis 6x9</h5>
+  <li>Bis 150 Stück: {{data['mittelformat']['bis-150']}}</li>
+  <li>Ab 150 Stück: {{data['mittelformat']['ab-150']}}</li>
+  <br>
+  <h5 class="fw-semibold">APS, Halbformat, Instamatic, Minox</h5>
+  <li>Bis 150 Stück: {{data['APS']['bis-150']}}</li>
+  <li>Ab 150 Stück: {{data['APS']['ab-150']}}</li>
+  <br>
 <img src="/pics/Pic-6-2.jpg" style="max-width: 30vw; max-height: 30vh;">
 <p style="margin-top: 3vh;">Als Sondergrößen werden alle Bildträger bezeichnet, welche von den Standardmaßen abweichen. Z.B. Fotos auf Glasuntergrund, selbstdefinierte Diagrößen, Fotos auf unüblichen Untergründen oder Bilder, die keine Fotos sind. </p>
 <img src="/pics/pic-5.jpg" style="max-width: 30vw; max-height: 30vh;">
